@@ -16,9 +16,9 @@
     <param.description>This MATLAB App Designer application provides a robust and interactive platform for solving function roots using advanced numerical methods. Designed for efficiency and precision, it integrates key algorithms such as Bisection, Newton-Raphson, and Secant methods, allowing users to visualize iterations, analyze convergence, and gain deeper insights into root-finding techniques. With an intuitive interface and dynamic plotting capabilities, this tool is ideal for students, researchers, and engineers seeking a streamlined approach to solving nonlinear equations.</param.description>
     <param.screenshot>${PROJECT_ROOT}/Images/image_1.jpg</param.screenshot>
     <param.guid />
-    <param.installpath.string>/Uni_Distrital_Francisco_Jose_de_Caldas/NumRootLab/</param.installpath.string>
+    <param.installpath.string>/NumRootLab/</param.installpath.string>
     <param.installpath.combo>option.installpath.systemwideapp</param.installpath.combo>
-    <param.logo>${PROJECT_ROOT}/image_3.jpg</param.logo>
+    <param.logo>${PROJECT_ROOT}/Images/presentation.jpg</param.logo>
     <param.install.notes />
     <param.target.install.notes>In the following directions, replace MR/R2024b by the directory on the target machine where MATLAB is installed, or MR by the directory where the MATLAB Runtime is installed.
 
@@ -57,8 +57,9 @@ ${DYLD_LIBRARY_PATH}:MR/R2024b/runtime/maca64:MR/R2024b/sys/os/maca64:MR/R2024b/
 	 input arguments</param.help.text>
     <unset>
       <param.version />
+      <param.authnamewatermark />
+      <param.email />
       <param.guid />
-      <param.installpath.string />
       <param.installpath.combo />
       <param.install.notes />
       <param.intermediate />
@@ -83,18 +84,18 @@ ${DYLD_LIBRARY_PATH}:MR/R2024b/runtime/maca64:MR/R2024b/sys/os/maca64:MR/R2024b/
     <fileset.main>
       <file>${PROJECT_ROOT}/NumRootLab.mlapp</file>
     </fileset.main>
-    <fileset.resources />
-    <fileset.package />
-    <fileset.depfun>
-      <file>${PROJECT_ROOT}/Images/Initial-Logo-Start.png</file>
-      <file>${PROJECT_ROOT}/Images/logo-lifae-1.png</file>
-      <file>${PROJECT_ROOT}/Images/logoFisinfor.png</file>
+    <fileset.resources>
+      <file>${PROJECT_ROOT}/Codes</file>
+      <file>${PROJECT_ROOT}/Images</file>
       <file>${PROJECT_ROOT}/Init.mlapp</file>
       <file>${PROJECT_ROOT}/Metodos_Ceros.mlapp</file>
-      <file>${PROJECT_ROOT}/biseccion.m</file>
-      <file>${PROJECT_ROOT}/puntoFijo.m</file>
-      <file>${PROJECT_ROOT}/secante.m</file>
-    </fileset.depfun>
+      <file>${PROJECT_ROOT}/Metodos_Ceros.prj</file>
+      <file>${PROJECT_ROOT}/NumRootLab.mlapp</file>
+      <file>${PROJECT_ROOT}/NumRootLab.prj</file>
+      <file>${PROJECT_ROOT}/README.md</file>
+    </fileset.resources>
+    <fileset.package />
+    <fileset.depfun />
     <build-deliverables>
       <file location="${PROJECT_ROOT}/NumRootLab/for_testing" name="splash.png" optional="false">/Users/diegojmac/Documents/GitHub/NumRootLab/NumRootLab/for_testing/splash.png</file>
       <file location="${PROJECT_ROOT}/NumRootLab/for_testing" name="NumRootLab.app" optional="false">/Users/diegojmac/Documents/GitHub/NumRootLab/NumRootLab/for_testing/NumRootLab.app</file>
